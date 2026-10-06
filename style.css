@@ -1,0 +1,390 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background-color: #f4f7fb;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.conteudo {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #ffffff;
+    border-bottom: 3px solid #1769aa;
+}
+
+.cabecalho-conteudo {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #0b2d4f;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-left: 6px solid #2589d8;
+    padding-left: 12px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #27364b;
+    font-size: 15px;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+    color: #1769aa;
+    border-bottom-color: #1769aa;
+}
+
+
+/* Seção Início */
+.inicio {
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    background-color: #eaf1f8;
+    border-bottom: 1px solid #ccd8e6;
+}
+
+.inicio-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inicio-texto {
+    width: 650px;
+}
+
+.introducao {
+    color: #1769aa;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.inicio h1 {
+    color: #0b2d4f;
+    font-size: 54px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.inicio h1 span {
+    color: #1769aa;
+}
+
+.resumo {
+    width: 590px;
+    color: #4b5b70;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.botao {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #1769aa;
+    border: 2px solid #1769aa;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    color: #1769aa;
+    background-color: #ffffff;
+}
+
+.inicio-detalhe {
+    width: 290px;
+    background-color: #0b2d4f;
+    border-left: 8px solid #2589d8;
+    padding: 34px 30px;
+    box-shadow: 8px 8px 0 #c9d7e5;
+}
+
+.inicio-detalhe p {
+    color: #70b9eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #54708a;
+    margin-bottom: 10px;
+}
+
+.inicio-detalhe span {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+
+/* Configuração das seções */
+.secao {
+    padding: 85px 0;
+}
+
+.titulo-secao {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 38px;
+}
+
+.titulo-secao p {
+    color: #2589d8;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #2589d8;
+    padding: 4px 9px;
+}
+
+.titulo-secao h2 {
+    color: #0b2d4f;
+    font-size: 32px;
+}
+
+.titulo-secao h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #2589d8;
+    margin-top: 5px;
+}
+
+
+/* Seção Sobre Mim */
+.sobre {
+    background-color: #ffffff;
+}
+
+.sobre-caixa {
+    border: 1px solid #bccadd;
+    border-left: 8px solid #1769aa;
+    padding: 32px 38px;
+    background-color: #f8fafc;
+    box-shadow: 5px 5px 0 #e0e8f1;
+}
+
+.sobre-caixa p {
+    color: #46566a;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.sobre-caixa p:last-child {
+    margin-bottom: 0;
+}
+
+.sobre-caixa strong {
+    color: #1769aa;
+}
+
+
+/* Seção Habilidades */
+.habilidades {
+    background-color: #eaf1f8;
+    border-top: 1px solid #d1dce8;
+    border-bottom: 1px solid #d1dce8;
+}
+
+.grade-habilidades {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card-habilidade {
+    min-height: 240px;
+    background-color: #ffffff;
+    border: 1px solid #b8c7d8;
+    border-top: 5px solid #1769aa;
+    padding: 25px;
+    box-shadow: 3px 3px 0 #d2deea;
+}
+
+.card-habilidade span {
+    color: #2589d8;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-habilidade h3 {
+    color: #0b2d4f;
+    font-size: 22px;
+    margin: 18px 0 12px;
+}
+
+.card-habilidade p {
+    color: #536277;
+    font-size: 15px;
+}
+
+
+/* Seção Projetos */
+.projetos {
+    background-color: #ffffff;
+}
+
+.grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card-projeto {
+    border: 1px solid #aebed0;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 0 #dbe4ed;
+}
+
+.numero-projeto {
+    color: #ffffff;
+    background-color: #0b2d4f;
+    border-bottom: 4px solid #2589d8;
+    padding: 14px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.projeto-conteudo {
+    min-height: 265px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto-conteudo h3 {
+    color: #0b2d4f;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.projeto-conteudo p {
+    color: #526175;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.botao-secundario {
+    align-self: flex-start;
+    margin-top: auto;
+    color: #1769aa;
+    border: 2px solid #1769aa;
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.botao-secundario:hover {
+    color: #ffffff;
+    background-color: #1769aa;
+}
+
+
+/* Seção Contato */
+.contato {
+    color: #ffffff;
+    background-color: #0b2d4f;
+    border-top: 6px solid #2589d8;
+}
+
+.contato-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+}
+
+.titulo-claro h2 {
+    color: #ffffff;
+}
+
+.texto-contato {
+    color: #c8d6e5;
+    width: 430px;
+    font-size: 17px;
+}
+
+.links-contato {
+    border-top: 1px solid #52708d;
+}
+
+.links-contato a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #52708d;
+    padding: 16px 12px;
+}
+
+.links-contato a:hover {
+    background-color: #123c62;
+    border-left: 5px solid #4aa9e9;
+}
+
+.links-contato span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.links-contato strong {
+    color: #8fcaf1;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+/* Rodapé */
+.rodape {
+    color: #aebed0;
+    background-color: #071f36;
+    border-top: 1px solid #36536e;
+}
+
+.rodape-conteudo {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape p {
+    font-size: 14px;
+}
+
